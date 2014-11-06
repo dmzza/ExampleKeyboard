@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FleksyEmojiViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
+  
+  FleksyEmojiViewController *collectionViewController = [[FleksyEmojiViewController alloc] initWithFrame:CGRectMake(0, 0, 320, 150)];
+  [self.view addSubview:collectionViewController.view];
+  [self addChildViewController:collectionViewController];
+  [collectionViewController didMoveToParentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {

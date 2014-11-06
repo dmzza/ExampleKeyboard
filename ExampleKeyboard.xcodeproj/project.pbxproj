@@ -17,6 +17,7 @@
 		AA39E8C11A0C07AE00A707CA /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */; };
 		AA39E8C41A0C07AE00A707CA /* KeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA39E8BB1A0C07AE00A707CA /* KeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA39E8CB1A0C32A400A707CA /* FleksyEmojiViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */; };
+		AA39E8CC1A0C36FA00A707CA /* FleksyEmojiViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,8 @@
 		AA39E8BE1A0C07AE00A707CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA39E8BF1A0C07AE00A707CA /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
-		AA39E8C91A0C32A400A707CA /* FleksyEmojiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FleksyEmojiViewController.h; sourceTree = "<group>"; };
-		AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FleksyEmojiViewController.mm; sourceTree = "<group>"; };
+		AA39E8C91A0C32A400A707CA /* FleksyEmojiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FleksyEmojiViewController.h; path = ../KeyboardExtension/FleksyEmojiViewController.h; sourceTree = "<group>"; };
+		AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FleksyEmojiViewController.mm; path = ../KeyboardExtension/FleksyEmojiViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +121,8 @@
 		AA39E8901A0C064700A707CA /* ExampleKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				AA39E8C91A0C32A400A707CA /* FleksyEmojiViewController.h */,
+				AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */,
 				AA39E8951A0C064700A707CA /* AppDelegate.h */,
 				AA39E8961A0C064700A707CA /* AppDelegate.m */,
 				AA39E8981A0C064700A707CA /* ViewController.h */,
@@ -161,8 +164,6 @@
 		AA39E8BC1A0C07AE00A707CA /* KeyboardExtension */ = {
 			isa = PBXGroup;
 			children = (
-				AA39E8C91A0C32A400A707CA /* FleksyEmojiViewController.h */,
-				AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */,
 				AA39E8BF1A0C07AE00A707CA /* KeyboardViewController.h */,
 				AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */,
 				AA39E8BD1A0C07AE00A707CA /* Supporting Files */,
@@ -309,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA39E89A1A0C064700A707CA /* ViewController.m in Sources */,
+				AA39E8CC1A0C36FA00A707CA /* FleksyEmojiViewController.mm in Sources */,
 				AA39E8971A0C064700A707CA /* AppDelegate.m in Sources */,
 				AA39E8941A0C064700A707CA /* main.m in Sources */,
 			);
