@@ -1,0 +1,5 @@
+*.xcuserstate
+*xcuserdata*
+*.strings
+Pods
+*.xccheckout
