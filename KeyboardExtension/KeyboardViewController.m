@@ -33,10 +33,21 @@
     [self.nextKeyboardButton addTarget:self action:@selector(advanceToNextInputMode) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:self.nextKeyboardButton];
+  
+    [self.view setBackgroundColor:[UIColor blueColor]];
     
     NSLayoutConstraint *nextKeyboardButtonLeftSideConstraint = [NSLayoutConstraint constraintWithItem:self.nextKeyboardButton attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0.0];
     NSLayoutConstraint *nextKeyboardButtonBottomConstraint = [NSLayoutConstraint constraintWithItem:self.nextKeyboardButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0];
     [self.view addConstraints:@[nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint]];
+  
+    UIScreenEdgePanGestureRecognizer *gestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture)];
+    [gestureRecognizer setEdges:UIRectEdgeAll];
+    [self.view addGestureRecognizer:gestureRecognizer];
+}
+
+- (void)handleGesture
+{
+  NSLog(@"gesture handled");
 }
 
 - (void)didReceiveMemoryWarning {
