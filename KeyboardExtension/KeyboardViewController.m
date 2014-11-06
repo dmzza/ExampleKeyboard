@@ -43,6 +43,10 @@
     UIScreenEdgePanGestureRecognizer *gestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture)];
     [gestureRecognizer setEdges:UIRectEdgeAll];
     [self.view addGestureRecognizer:gestureRecognizer];
+  
+    // This will work fine (if you remove the edge swipe recognizer and uncomment the lines below)
+//    UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture)];
+//    [self.view addGestureRecognizer:gestureRecognizer];
 }
 
 - (void)handleGesture
