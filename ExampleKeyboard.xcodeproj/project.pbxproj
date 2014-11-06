@@ -16,6 +16,7 @@
 		AA39E8AE1A0C064800A707CA /* ExampleKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8AD1A0C064800A707CA /* ExampleKeyboardTests.m */; };
 		AA39E8C11A0C07AE00A707CA /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */; };
 		AA39E8C41A0C07AE00A707CA /* KeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA39E8BB1A0C07AE00A707CA /* KeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA39E8CB1A0C32A400A707CA /* FleksyEmojiViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		AA39E8BE1A0C07AE00A707CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA39E8BF1A0C07AE00A707CA /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		AA39E8C91A0C32A400A707CA /* FleksyEmojiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FleksyEmojiViewController.h; sourceTree = "<group>"; };
+		AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FleksyEmojiViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 		AA39E8BC1A0C07AE00A707CA /* KeyboardExtension */ = {
 			isa = PBXGroup;
 			children = (
+				AA39E8C91A0C32A400A707CA /* FleksyEmojiViewController.h */,
+				AA39E8CA1A0C32A400A707CA /* FleksyEmojiViewController.mm */,
 				AA39E8BF1A0C07AE00A707CA /* KeyboardViewController.h */,
 				AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */,
 				AA39E8BD1A0C07AE00A707CA /* Supporting Files */,
@@ -322,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA39E8C11A0C07AE00A707CA /* KeyboardViewController.m in Sources */,
+				AA39E8CB1A0C32A400A707CA /* FleksyEmojiViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +541,7 @@
 				AA39E8B31A0C064800A707CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA39E8B41A0C064800A707CA /* Build configuration list for PBXNativeTarget "ExampleKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +550,7 @@
 				AA39E8B61A0C064800A707CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA39E8C51A0C07AE00A707CA /* Build configuration list for PBXNativeTarget "KeyboardExtension" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +559,7 @@
 				AA39E8C71A0C07AE00A707CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
