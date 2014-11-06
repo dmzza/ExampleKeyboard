@@ -14,6 +14,8 @@
 		AA39E89F1A0C064700A707CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA39E89E1A0C064700A707CA /* Images.xcassets */; };
 		AA39E8A21A0C064700A707CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA39E8A01A0C064700A707CA /* LaunchScreen.xib */; };
 		AA39E8AE1A0C064800A707CA /* ExampleKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8AD1A0C064800A707CA /* ExampleKeyboardTests.m */; };
+		AA39E8C11A0C07AE00A707CA /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */; };
+		AA39E8C41A0C07AE00A707CA /* KeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA39E8BB1A0C07AE00A707CA /* KeyboardExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +26,28 @@
 			remoteGlobalIDString = AA39E88D1A0C064700A707CA;
 			remoteInfo = ExampleKeyboard;
 		};
+		AA39E8C21A0C07AE00A707CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA39E8861A0C064700A707CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA39E8BA1A0C07AE00A707CA;
+			remoteInfo = KeyboardExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA39E8C81A0C07AE00A707CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA39E8C41A0C07AE00A707CA /* KeyboardExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA39E88E1A0C064700A707CA /* ExampleKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +63,10 @@
 		AA39E8A71A0C064800A707CA /* ExampleKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA39E8AC1A0C064800A707CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA39E8AD1A0C064800A707CA /* ExampleKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleKeyboardTests.m; sourceTree = "<group>"; };
+		AA39E8BB1A0C07AE00A707CA /* KeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA39E8BE1A0C07AE00A707CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA39E8BF1A0C07AE00A707CA /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +84,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA39E8B81A0C07AE00A707CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +99,7 @@
 			children = (
 				AA39E8901A0C064700A707CA /* ExampleKeyboard */,
 				AA39E8AA1A0C064800A707CA /* ExampleKeyboardTests */,
+				AA39E8BC1A0C07AE00A707CA /* KeyboardExtension */,
 				AA39E88F1A0C064700A707CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +109,7 @@
 			children = (
 				AA39E88E1A0C064700A707CA /* ExampleKeyboard.app */,
 				AA39E8A71A0C064800A707CA /* ExampleKeyboardTests.xctest */,
+				AA39E8BB1A0C07AE00A707CA /* KeyboardExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +155,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AA39E8BC1A0C07AE00A707CA /* KeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AA39E8BF1A0C07AE00A707CA /* KeyboardViewController.h */,
+				AA39E8C01A0C07AE00A707CA /* KeyboardViewController.m */,
+				AA39E8BD1A0C07AE00A707CA /* Supporting Files */,
+			);
+			path = KeyboardExtension;
+			sourceTree = "<group>";
+		};
+		AA39E8BD1A0C07AE00A707CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA39E8BE1A0C07AE00A707CA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,10 +183,12 @@
 				AA39E88A1A0C064700A707CA /* Sources */,
 				AA39E88B1A0C064700A707CA /* Frameworks */,
 				AA39E88C1A0C064700A707CA /* Resources */,
+				AA39E8C81A0C07AE00A707CA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AA39E8C31A0C07AE00A707CA /* PBXTargetDependency */,
 			);
 			name = ExampleKeyboard;
 			productName = ExampleKeyboard;
@@ -157,6 +213,23 @@
 			productReference = AA39E8A71A0C064800A707CA /* ExampleKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AA39E8BA1A0C07AE00A707CA /* KeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA39E8C51A0C07AE00A707CA /* Build configuration list for PBXNativeTarget "KeyboardExtension" */;
+			buildPhases = (
+				AA39E8B71A0C07AE00A707CA /* Sources */,
+				AA39E8B81A0C07AE00A707CA /* Frameworks */,
+				AA39E8B91A0C07AE00A707CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardExtension;
+			productName = KeyboardExtension;
+			productReference = AA39E8BB1A0C07AE00A707CA /* KeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +245,9 @@
 					AA39E8A61A0C064800A707CA = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = AA39E88D1A0C064700A707CA;
+					};
+					AA39E8BA1A0C07AE00A707CA = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -190,6 +266,7 @@
 			targets = (
 				AA39E88D1A0C064700A707CA /* ExampleKeyboard */,
 				AA39E8A61A0C064800A707CA /* ExampleKeyboardTests */,
+				AA39E8BA1A0C07AE00A707CA /* KeyboardExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -206,6 +283,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AA39E8A51A0C064800A707CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA39E8B91A0C07AE00A707CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,6 +317,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA39E8B71A0C07AE00A707CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA39E8C11A0C07AE00A707CA /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +332,11 @@
 			isa = PBXTargetDependency;
 			target = AA39E88D1A0C064700A707CA /* ExampleKeyboard */;
 			targetProxy = AA39E8A81A0C064800A707CA /* PBXContainerItemProxy */;
+		};
+		AA39E8C31A0C07AE00A707CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA39E8BA1A0C07AE00A707CA /* KeyboardExtension */;
+			targetProxy = AA39E8C21A0C07AE00A707CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +492,30 @@
 			};
 			name = Release;
 		};
+		AA39E8C61A0C07AE00A707CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA39E8C71A0C07AE00A707CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,6 +541,14 @@
 			buildConfigurations = (
 				AA39E8B51A0C064800A707CA /* Debug */,
 				AA39E8B61A0C064800A707CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA39E8C51A0C07AE00A707CA /* Build configuration list for PBXNativeTarget "KeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA39E8C61A0C07AE00A707CA /* Debug */,
+				AA39E8C71A0C07AE00A707CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
