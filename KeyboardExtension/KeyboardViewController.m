@@ -41,8 +41,12 @@
     [self.view addConstraints:@[nextKeyboardButtonLeftSideConstraint, nextKeyboardButtonBottomConstraint]];
   
     UIScreenEdgePanGestureRecognizer *gestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture)];
-    [gestureRecognizer setEdges:UIRectEdgeAll];
+    [gestureRecognizer setEdges:UIRectEdgeLeft];
     [self.view addGestureRecognizer:gestureRecognizer];
+  
+  UIScreenEdgePanGestureRecognizer *rightEdgeGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRight)];
+  [rightEdgeGestureRecognizer setEdges:UIRectEdgeRight];
+  [self.view addGestureRecognizer:rightEdgeGestureRecognizer];
   
     // This will work fine (if you remove the edge swipe recognizer and uncomment the lines below)
 //    UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture)];
@@ -52,6 +56,11 @@
 - (void)handleGesture
 {
   NSLog(@"gesture handled");
+}
+
+- (void)handleGestureRight
+{
+  NSLog(@"right gesture handled");
 }
 
 - (void)didReceiveMemoryWarning {
